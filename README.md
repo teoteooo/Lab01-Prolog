@@ -161,7 +161,7 @@ Responde:
 - Define una regla reprueba, que sea cierta si un estudiante tiene menor a 3.0.
 - Define una regla aprueba, que sea cierta si un estudiante tiene nota mayor o igual a 3.0.
 - Define una regla rango, donde rango(X, Min, Max) sea cierto si la nota de un estudiante X está entre Min y Max.
-- Define una regla clasificacion/2 que asigne una categoría a cada estudiante según la nota:
+- Define una regla clasificacion que asigne una categoría a cada estudiante según la nota:
 
    - 0.0 – 2.9 → reprobado
    - 3.0 – 3.9 → aprobado

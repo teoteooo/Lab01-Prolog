@@ -168,3 +168,45 @@ Responde:
    - 4.0 – 4.4 → notable
    - 4.5 – 5.0 → excelente
 
+## Ejercio 4 - Recursion simple
+
+Serie de Fibonacci
+
+La serie de Fibonacci se define así:
+
+- fib(0) = 0
+- fib(1) = 1
+- fib(N) = fib(N-1) + fib(N-2), para N > 1
+
+``
+0, 1, 2, 3, 5 , 8, 13
+``
+
+Define la regla fibonacci(X, N), donde X el el numero_x de la serie de fibonacci y F el valor correspondiente de la serie, uso de "is" para asignar valores a variables.
+
+## Ejercio 5 - Listas
+
+En Prolog, las listas se representan con corchetes:
+
+* Lista vacía: []
+* Lista con elementos: [a, b, c]
+
+Se puede descomponer en cabeza y cola: [Cabeza | Cola]
+
+```
+?- [H|T] = [1,2,3,4].
+H = 1,
+T = [2,3,4].
+```
+
+```
+?- [H|T] = [1].
+H = 1,
+T = [].
+```
+
+Ejercicios:
+- Escribe una regla que verifique si un elemento es miembro de una lista.
+- Escribe una regla "longitud" que dada una lista, calcule su longitud.
+- Escribe una regla "concatena" que dadas dos listas, las concatene en otra.
+- Escribe una regla que permite obtener en una lista los N elementos de las serie de fibonacci, usa la regla predifina append(L1,L2,L3), que concatena L1 y L2, en L3.

@@ -168,6 +168,20 @@ Responde:
    - 4.0 – 4.4 → notable
    - 4.5 – 5.0 → excelente
 
+- Define la regla distancia((X1, Y1), (X2, Y2), D), que calcule la distantia euclidiana entre dos puntos
+
+Ahora teniendo en cuenta estos casos base.
+
+```
+% Caso base: lista vacía o con un solo punto -> distancia 0
+distancia_total([], 0).
+distancia_total([_], 0).
+```
+
+- Define la regla 
+
+distancia_total([P1, P2 | Resto], Total), que calcule la suma de distancias entre una lista puntos.
+
 ## Ejercio 4 - Recursion simple
 
 Serie de Fibonacci

@@ -56,6 +56,88 @@ El desarrollo se realizará en **[SWISH Prolog](https://swish.swi-prolog.org/)**
 
 - Revise la documentación oficial de Prolog: [SWI-Prolog Documentation](https://www.swi-prolog.org/pldoc/).  
 - Antes de subir sus archivos, **ejecute y verifique** cada consulta en SWISH.  
-- Mantenga su repositorio organizado y actualizado.  
+- Mantenga su repositorio organizado y actualizado.
 
 ---
+
+## Ejercicio 1 - Hechos y consultas simples
+
+Dada la siguiente base de conocimiento
+```
+% Hechos: relación entre ciudades
+ciudad(bogota).
+ciudad(medellin).
+ciudad(cali).
+ciudad(cartagena).
+ciudad(manizales).
+ciudad(barranquilla).
+ciudad(pasto).
+ciudad(monteria).
+
+% Hechos: vuelos directos
+vuelo(bogota, medellin).
+vuelo(medellin, cartagena).
+vuelo(cali, bogota).
+vuelo(bogota, cartagena).
+vuelo(manizales, cartagena).
+vuelo(medellin, barranquilla).
+vuelo(pasto, bogota).
+vuelo(bogota, pasto).
+
+```
+
+Responde:
+
+1. ¿Existe un vuelo directo de Bogotá a Medellín?.
+2. ¿Qué destinos se pueden alcanzar directamente desde Bogotá?.
+3. ¿Desde que destinos se puede alcanzar Medellin?
+4. ¿Hay alguna forma de llegar directamente a cali?
+
+## Ejercicio 2 - Reglas basicas
+
+Dada la base de conocimiento de vuelos, define una regla que:
+
+- Determine si dos ciudades están conectadas mediante una escala.
+     - Ahora, verifica si existe una conexión de Bogotá a Barranquilla.
+- Encuentra todas las ciudades a las que se puede llegar desde Cali con una escala.
+- Define una regla viaje que sea cierta si existe un vuelo directo o con una escala entre dos ciudades (no usar recursion).
+   - Ahora, verifica si existe un viaje posible de Bogotá a Pasto.
+
+- Define una regla destinos que devuelva la lista de todos los destinos alcanzables directamente desde una ciudad.
+
+---
+
+Dada la base de conocimiento.
+
+```
+perro(firulais).
+perro(bruno).
+perro(max).
+gato(misu).
+gato(luna).
+gato(chanel).
+gato(orion).
+ave(piolin).
+
+dueno(ana, firulais).
+dueno(ana, misu).
+dueno(luis, luna).
+dueno(luis, orion).
+dueno(luis, firulais).
+dueno(maria, piolin).
+dueno(julia, chanel).
+dueno(pedro, bruno).
+```
+
+Responde:
+
+- Define una regla que determine si una persona tiene un perro.
+   - Ahora, encuentra los dueños de perros.
+- Define una regla que determine si una persona tiene un gato.
+   - Ahora, encuentra los dueños de gatos.
+- Define una regla que determine si una persona tiene multiples mascotas.
+   - Ahora, encuentra los dueños de multiple tipos de mascota.
+- Define una regla amante_animales para identificar dueños que tienen tanto perro como gato.
+- Define una regla mascota_compartida que indique si dos personas comparten mascota.
+- Define una regla tipo_mascota que asocie una persona con el tipo de mascota que tiene (perro, gato, ave, etc.).
+

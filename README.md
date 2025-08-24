@@ -141,3 +141,30 @@ Responde:
 - Define una regla mascota_compartida que indique si dos personas comparten mascota.
 - Define una regla tipo_mascota que asocie una persona con el tipo de mascota que tiene (perro, gato, ave, etc.).
 
+---
+
+## Ejercicio 3 - Predicados con condiciones aritméticas
+
+Dada la base de conocimientos
+
+```
+% Hechos: estudiante y su nota final en un curso
+nota(ana, 4.5).
+nota(luis, 2.8).
+nota(maria, 3.7).
+nota(juan, 5.0).
+nota(pedro, 2.3).
+```
+
+Responde:
+
+- Define una regla reprueba, que sea cierta si un estudiante tiene menor a 3.0.
+- Define una regla aprueba, que sea cierta si un estudiante tiene nota mayor o igual a 3.0.
+- Define una regla rango, donde rango(X, Min, Max) sea cierto si la nota de un estudiante X está entre Min y Max.
+- Define una regla clasificacion/2 que asigne una categoría a cada estudiante según la nota:
+
+   - 0.0 – 2.9 → reprobado
+   - 3.0 – 3.9 → aprobado
+   - 4.0 – 4.4 → notable
+   - 4.5 – 5.0 → excelente
+

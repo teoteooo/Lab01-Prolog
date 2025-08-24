@@ -184,7 +184,16 @@ La serie de Fibonacci se define así:
 
 Define la regla fibonacci(X, N), donde X el el numero_x de la serie de fibonacci y F el valor correspondiente de la serie, uso de "is" para asignar valores a variables.
 
-## Ejercio 5 - Listas
+## Ejercicio 5 - 4 color problem
+
+Dado el problema.
+
+Find an "admissible" coloring of a map such that all adjacent countries have different colors. It had been conjectured for a long time that such a coloring is possible with only 4 colors. This conjecture was formulated precisely by F. Guthrie already in 1852, but proved by K. Appel und W. Haken only in 1976 using a computer program.
+
+Escribe un programa que encuentre todas las soluciones validas del mapa usando 4 colores, azul, amarillo, rojo, verde.
+
+
+## Ejercicio 6 - Listas
 
 En Prolog, las listas se representan con corchetes:
 
@@ -210,3 +219,5 @@ Ejercicios:
 - Escribe una regla "longitud" que dada una lista, calcule su longitud.
 - Escribe una regla "concatena" que dadas dos listas, las concatene en otra.
 - Escribe una regla que permite obtener en una lista los N elementos de las serie de fibonacci, usa la regla predifina append(L1,L2,L3), que concatena L1 y L2, en L3.
+
+

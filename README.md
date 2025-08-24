@@ -103,7 +103,7 @@ Dada la base de conocimiento de vuelos, define una regla que:
 - Define una regla viaje que sea cierta si existe un vuelo directo o con una escala entre dos ciudades (no usar recursion).
    - Ahora, verifica si existe un viaje posible de Bogotá a Pasto.
 
-- Define una regla destinos que devuelva la lista de todos los destinos alcanzables directamente desde una ciudad.
+- Define una regla destinos que devuelva todos los destinos alcanzables directamente desde una ciudad.
 
 ---
 

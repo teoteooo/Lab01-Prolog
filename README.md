@@ -192,6 +192,21 @@ Find an "admissible" coloring of a map such that all adjacent countries have dif
 
 Escribe un programa que encuentre todas las soluciones validas del mapa usando 4 colores, azul, amarillo, rojo, verde.
 
+![img](mapa_4colors.png)
+
+```
+color(red).
+color(blue).
+color(yellow).
+color(green).
+
+map(A, B, C, D, E) :-
+    adjacent(A, B), adjacent(A, D), adjacent(A, E),
+    adjacent(B, C), adjacent(B, D), adjacent(B, E),
+    adjacent(C, D), adjacent(C, E),
+    adjacent(D, E).
+```
+Faltaria definir la regla adjacent la cual valide la adyacencia valida.
 
 ## Ejercicio 6 - Listas
 
